@@ -1,0 +1,13 @@
+<h1>Create New Post</h2>
+<%= form_for @post do |post| %>
+  <%= post.label :title %>:
+  <%= post.text_field :title %><br />
+
+  <%= post.label :author %>:
+  <%= post.text_field :author %><br />
+
+  <%= post.label :body %>:
+  <%= post.text_area :body %><br />
+
+  <%= post.submit %>
+<% end %>

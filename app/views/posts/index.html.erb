@@ -1,0 +1,8 @@
+<h1>All Posts</h1>
+<% @posts.each do |post| %>
+  <div class="postPadding">
+    <p><%=post.title%></p>
+    <p>By: <%=post.author%></p>
+    <p><%=post.body%></p>
+  </div>
+<% end %>
